@@ -27,10 +27,8 @@ function makeAnagram(a, b) {
     let freqs = {};
     a.split('').forEach(char => freqs[char] = (freqs[char] || 0) + 1); // increment
     b.split('').forEach(char => freqs[char] = (freqs[char] || 0) - 1); // decrement
-    // console.log(Object.keys(freqs).reduce((sum, key) => sum + Math.abs(freqs[key]), 0));
-    // console.log(freqs)
+    console.log(Object.keys(freqs).reduce((sum, key) => sum + Math.abs(freqs[key]), 0));
     
-
 }
 
 makeAnagram(a, b)
