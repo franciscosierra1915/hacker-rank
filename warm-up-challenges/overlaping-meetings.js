@@ -1,12 +1,14 @@
 
-const meetings = [ [9,14], [17,20], [15,18], [6,9] ]
+const meetings = [ [6,9], [11,14], [17,20], [15,18] ]
 // const meetings = [[6,9], [9,14], [15,16], [17,20]]
 
 // Output [[6,14], [15,20]]
 
 function mergeMeetings(meetings){
+    let mergedList = [];
+    let sorted = meetings.sort((a, b) => a[0] - b[0]);
 
-    // let sorted = meetings.sort((a, b) => a[0] - b[0]);
+    return mergedList;
 
 
 
